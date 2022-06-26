@@ -14,7 +14,7 @@
 - HID鼠标 (端口:0x82)
 - HID键盘 (端口:0x83 report ID: 2)
 - HID System Control(System Power Down, System Sleep,System Wake Up) (端口:0x83 report ID: 3) 
-- Custom HID (用于上位机发送指令)
+- Custom HID (用于上位机发送指令 端口:0x81)
 ## Custom HID指令接口
 ### VID: 0x0484
 ### PID: 0x5750
