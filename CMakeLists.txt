@@ -11,8 +11,8 @@ set(CMAKE_C_COMPILER C:/Keil_v5/ARM/ARMCLANG/bin/armclang.exe)
 set(CMAKE_C_COMPILER_WORKS TRUE)
 set(CMAKE_CXX_COMPILER C:/Keil_v5/ARM/ARMCLANG/bin/armclang.exe)
 set(CMAKE_CXX_COMPILER_WORKS TRUE)
-#set(CMAKE_ASM_COMPILER C:/Keil_v5/ARM/ARMCLANG/bin/armclang.exe)
-set(CMAKE_ASM_COMPILER C:/Keil_v5/ARM/ARMCLANG/bin/armasm.exe)     # 指明 ASM 编译器，配合 第二种 CMAKE_ASM_FLAGS_INIT 方式使用
+set(CMAKE_ASM_COMPILER C:/Keil_v5/ARM/ARMCLANG/bin/armclang.exe)
+#set(CMAKE_ASM_COMPILER C:/Keil_v5/ARM/ARMCLANG/bin/armasm.exe)     # 指明 ASM 编译器，配合 第二种 CMAKE_ASM_FLAGS_INIT 方式使用
 set(CMAKE_ASM_COMPILER_WORKS TRUE)
 
 #设置链接器
@@ -20,7 +20,7 @@ set(CMAKE_C_LINK_EXECUTABLE C:/Keil_v5/ARM/ARMCLANG/bin/armlink.exe)
 set(CMAKE_ASM_LINK_EXECUTABLE C:/Keil_v5/ARM/ARMCLANG/bin/armlink.exe)
 set(CMAKE_CXX_LINK_EXECUTABLE C:/Keil_v5/ARM/ARMCLANG/bin/armlink.exe)
 
-set(SECTIONS_SCRIPT_PATH ${CMAKE_HOME_DIRECTORY}/MDK-ARM/${PROJECT_NAME}/${PROJECT_NAME}.sct)
+set(SECTIONS_SCRIPT_PATH ${CMAKE_HOME_DIRECTORY}/MDK-ARM/${PROJECT_NAME}.sct)
 
 set(C_TARGET_FLAG --target=arm-arm-none-eabi)               # MDK 的 link 分页中的配置
 set(ASM_TARGET_FLAG --target=arm-arm-none-eabi)             # MDK 的 link 分页中的配置(不支持显示指定 ASM 编译器的方式)
