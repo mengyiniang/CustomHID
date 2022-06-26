@@ -13,7 +13,7 @@
 ### 基于STM32L053R8的USB外设 构建HID协议栈 将设备枚举成为HID复合设备 其中包括:
 - HID鼠标 (端口:0x82)
 - HID键盘 (端口:0x83 report ID: 2)
-- HID System Control(System Power Down, System Sleep,System Wake Up) (端口:0x83 report ID: 3) 
+- HID System Control (System Power Down, System Sleep,System Wake Up) (端口:0x83 report ID: 3) 
 - Custom HID (用于上位机发送指令 端口:0x81)
 ## Custom HID指令接口
 ### VID: 0x0484
